@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641530849589,
+  "lastUpdate": 1641836418619,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c230e51439a8dc2f6bd358e43e933fc126e6986e",
-          "message": "Common: add custom params for Optimism L2 (#1554)\n\n* Add custom params for Optimism L2\r\n\r\n* Note on London hardfork\r\n\r\n* Requested fixes\r\n\r\n* Edit note",
-          "timestamp": "2021-11-05T09:29:24+01:00",
-          "tree_id": "e8be74da857aa6c6e4b3ebdb86b196689519a395",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c230e51439a8dc2f6bd358e43e933fc126e6986e"
-        },
-        "date": 1636101223592,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 18933,
-            "range": "±11.44%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 19648,
-            "range": "±2.53%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 12003,
-            "range": "±22.11%",
-            "unit": "ops/sec",
-            "extra": "51 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 16714,
-            "range": "±2.36%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 17433,
-            "range": "±3.42%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1324,
-            "range": "±5.73%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 95.09,
-            "range": "±117.87%",
-            "unit": "ops/sec",
-            "extra": "21 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 152,
-            "range": "±7.11%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 8.33,
-            "range": "±155.09%",
-            "unit": "ops/sec",
-            "extra": "12 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±99.46%",
             "unit": "ops/sec",
             "extra": "31 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf0bab303856263c2d19d0b64a078f69b4a72d52",
+          "message": "ci: upgrade node to v16 (#1624)\n\n* ci: upgrade node to v16 (which includes npm v7+ by default)\r\n* devp2p: _peerStatus type fix\r\n* util: spec type fix\r\n* update package-lock\r\n* vm: fix type error\r\n* client: exclude null type to fix type error",
+          "timestamp": "2022-01-10T09:34:33-08:00",
+          "tree_id": "63a7e75cfa7859e4a83750041929c811b1b3f35e",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/cf0bab303856263c2d19d0b64a078f69b4a72d52"
+        },
+        "date": 1641836417995,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 13048,
+            "range": "±14.36%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 10193,
+            "range": "±18.31%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 15103,
+            "range": "±2.17%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 13109,
+            "range": "±11.03%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 4435,
+            "range": "±5.43%",
+            "unit": "ops/sec",
+            "extra": "53 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 585,
+            "range": "±20.83%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 173,
+            "range": "±10.77%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 34.4,
+            "range": "±120.40%",
+            "unit": "ops/sec",
+            "extra": "46 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 13,
+            "range": "±29.01%",
+            "unit": "ops/sec",
+            "extra": "30 samples"
           }
         ]
       }
