@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642448496107,
+  "lastUpdate": 1642496691329,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "76a3b129183813a353fea28494083bc160d59778",
-          "message": "blockchain: v5.5.1 release (#1567)\n\n* blockchain: prepare v5.5.1 release\r\n\r\n* client fix cli tape tests: prevent end being called more than once per suite",
-          "timestamp": "2021-11-16T09:42:48+01:00",
-          "tree_id": "b847e37280969c6170c66245f8b0b172e4392bc8",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/76a3b129183813a353fea28494083bc160d59778"
-        },
-        "date": 1637052506134,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 10176,
-            "range": "±12.42%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 12547,
-            "range": "±2.81%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 11383,
-            "range": "±3.92%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 6622,
-            "range": "±20.79%",
-            "unit": "ops/sec",
-            "extra": "45 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 11865,
-            "range": "±8.37%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1105,
-            "range": "±7.18%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 141,
-            "range": "±83.45%",
-            "unit": "ops/sec",
-            "extra": "38 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 120,
-            "range": "±11.05%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 24.54,
-            "range": "±11.07%",
-            "unit": "ops/sec",
-            "extra": "25 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±10.62%",
             "unit": "ops/sec",
             "extra": "8 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6bb2f23047112e3a984e98e5a2ee6bb449b08d48",
+          "message": "Client: Add tests to verify shutdown (#1641)\n\n* Add tests to verify client shutdown\r\n\r\n* Add libp2p test\r\n\r\n* Address feedback\r\n\r\n* most libp2p into separate file",
+          "timestamp": "2022-01-18T09:59:54+01:00",
+          "tree_id": "252885a906432a910769a3dbd142781f62692eee",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/6bb2f23047112e3a984e98e5a2ee6bb449b08d48"
+        },
+        "date": 1642496690732,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 11891,
+            "range": "±10.13%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 8990,
+            "range": "±17.65%",
+            "unit": "ops/sec",
+            "extra": "50 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12933,
+            "range": "±3.47%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 13014,
+            "range": "±3.13%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 14875,
+            "range": "±3.47%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 471,
+            "range": "±7.84%",
+            "unit": "ops/sec",
+            "extra": "47 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 97.35,
+            "range": "±11.01%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 46.76,
+            "range": "±21.14%",
+            "unit": "ops/sec",
+            "extra": "45 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 17.31,
+            "range": "±4.77%",
+            "unit": "ops/sec",
+            "extra": "33 samples"
           }
         ]
       }
